@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The truth big adventure</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="no_folder">真心话那？赶快新建一个吧！</string>
+    <string name="no_folder_item">没有真心话</string>
+    <string name="choose_truth_item">选择真心话冒险卡</string>
+    <string name="truth_goodluck">祝您好运</string>
+    <string name="btn_desire">挑战自己</string>
+    <string name="btn_negtive">愿赌服输</string>
+    <string name="sum_desire_negtive">参与统计，有多少人在此折戟沉沙</string>
+    <string name="folder_title">真心话大冒险</string>
+    <string name="folder_refresh">正在刷新</string>
+    <string name="menu_modify_folder">修改名称</string>
+    <string name="menu_delete_folder">删除此项</string>
+
+</resources>

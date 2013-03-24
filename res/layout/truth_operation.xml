@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:background="#ff00ff00"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="3dip"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/header_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/truth_goodluck"
+            android:textSize="20dip"/>
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="20dip"/>
+    
+    <LinearLayout android:id="@+id/center_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff0000"
+        android:layout_weight="1">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+        <TextView android:id="@+id/truth_title" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/app_name"
+            android:gravity="center" android:layout_marginBottom="5dip"
+            android:layout_alignParentTop="true"/>
+        <TextView android:id="@+id/truth_date" android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/app_name"
+            android:gravity="right" android:layout_marginBottom="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/truth_title"/>
+        <TextView android:id="@+id/truth_type" android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/app_name"
+            android:gravity="left" android:layout_marginBottom="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/truth_title"/>
+         <View android:background="#eeeeee" android:layout_below="@id/truth_date"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        <TextView android:id="@+id/truth_desire" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/app_name"
+            android:gravity="left" android:layout_marginTop="5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView android:id="@+id/truth_negtive" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/app_name"
+            android:gravity="right" android:layout_marginTop="5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+        <FrameLayout android:id="@+id/content" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_below="@id/truth_type" 
+            android:layout_above="@id/truth_desire">
+            
+            <com.zhuoyang.thetruthbigadventure.ui.TruthShowViewTextView 
+                android:id="@+id/truth_content" android:layout_width="match_parent"
+	            android:layout_height="match_parent" android:text="@string/app_name"
+	            android:gravity="center"
+                />
+	        <!-- <TextView android:id="@+id/truth_content" android:layout_width="match_parent"
+	            android:layout_height="match_parent" android:text="@string/app_name"
+	            android:gravity="center"
+	            android:layout_below="@id/truth_type" 
+	            android:layout_above="@id/truth_desire"/>
+	        <com.zhuoyang.thetruthbigadventure.ui.TruthShowView
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+	            android:src="@drawable/list_background"
+	            /> -->
+        </FrameLayout>
+        <View android:background="#eeeeee" android:layout_above="@id/truth_desire"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip"
+        android:layout_marginBottom="5dip"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:text="@string/sum_desire_negtive"
+            android:layout_marginBottom="3dip"/>
+        
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip">
+            
+        <Button android:id="@+id/btn_desire"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_desire"/>
+        
+        <Button android:id="@+id/btn_negtive"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_negtive"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

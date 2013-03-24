@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "folder_type">
+        <item name = "default0">第一个让你有过动心感觉的人是谁？</item>
+        <item name = "default1">和你的恋人怎么相爱的？</item>
+        <item name = "default2">你最喜欢他/她哪一点？</item>
+        <item name = "default3">到目前为止你守身如玉几年了？</item>
+        <item name = "default4">对你左边的人说"我爱你"</item>
+        <item name = "default5">描述一下你心目中的异性？</item>
+        <item name = "default6">你会和你爱的人相伴到老吗？</item>
+        <item name = "default7">描述一下你感觉最浪漫的事？</item>
+    </string-array>
+    <string name = "default_name">默认</string>
+    <string name = "luck_star">幸运星</string>
+    <string name = "default_snippet">默认类别收藏夹</string>
+</resources>
